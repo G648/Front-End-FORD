@@ -1,0 +1,397 @@
+@font-face {
+    font-family: 'font-paragrafo';
+    src: url(Assets/Fonts/Inter/static/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'font-titulo';
+    src: url(Assets/Fonts/Titillium_Web/TitilliumWeb-Black.ttf);
+}
+
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*configurações genericas*/
+/* vai fazer o conteúdo ficar preso no meio do site */
+.container-grid {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*header*/
+header {
+    background-color: #4E53D4;
+    height: 90px;
+}
+
+/* header-flex -> responsável pela organização dos componentes do header */
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* realiza a estilização dos textos dos links pegando todos as tags "a"  */
+.links-header .nav-link a {
+    text-decoration: none;
+    color: white;
+    font-family: font-paragrafo;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.links-header .nav a {
+    text-shadow: 2px 2px 7px black;
+}
+
+.links-header .nav-link a:hover {
+    color: black;
+    transition: 0.2s;
+}
+
+/* organiza os links de acordo com o protótipo */
+.nav-link {
+    width: 350px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* estilização do input de pesquisa */
+.input-search input {
+    width: 387px;
+    height: 41px;
+    border-radius: 20px;
+    border: none;
+    background: none;
+    outline: none;
+    font-family: font-paragrafo;
+    font-size: 15px;
+}
+
+/* Fundo do input (backgroud) */
+.input-search {
+    background-color: white;
+    border-radius: 20px;
+    padding-left: 10px;
+}
+
+/* remover os marcadores da lista ordenada */
+.nav-link, .nav-icon {
+    list-style-type: none;
+}
+
+/* realiza a organização dos links */
+.nav-icon {
+    width: 194px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* BANNER */
+
+/* REALIZAR A CRIAÇÃO DO BANNER DE FUNDO, UTILIZAMOS A IMAGEM AQUI PARA REALIZAR A EDIÇÃO DIRETA NO CSS */
+.banner {
+    background-image: url(Assets/images/eric-masur-AEyam8UN6NY-unsplash\ 1.png);
+    height: 598px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+/* realiza a estilização de todos os componentes dentro do banner */
+.banner-flex {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* realiza a estilização das informações continas no banner */
+.banner-info {
+    width: 181px;
+    height: 130px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* estilização do texto */
+.banner-info h1 {
+    font-family: font-titulo;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #4E53D4;
+}
+
+/* borda gradiente no bottão */
+.border-gradient {
+    padding: 2px;
+    border-radius: 8px;
+    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, .6), rgba(255, 255, 255, .1));
+    z-index: 1;
+}
+
+button {
+    width: 181px;
+    height: 44px;
+    border-radius: 8px;
+    background-color: #4E53D4;
+    border: none;
+    cursor: pointer;
+}
+
+/* edição do paragrafo dentro do botão */
+.button-edit {
+    font-family: font-paragrafo;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+}
+
+/* MAIN */
+
+/* realiza a criação do "banner" da nossa main (cards) */
+.background-oferta {
+    background-color: #5BDBF5;
+    background-image: linear-gradient(246deg, rgba(91, 219, 245, 0.60) 0%, #5BDBF5 10%, #56A6E8 50%, #F5B945 100%);
+    height: 900px;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.tittle-main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.background-oferta .news-tittle {
+    color: white;
+    font-family: font-titulo;
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+
+}
+
+.background-oferta .news-paragrafo {
+    color: white;
+    font-family: font-paragrafo;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.news-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    background-image: linear-gradient(315deg, #7F5BF5 0%, rgba(127, 91, 245, 0.36) 53.27%, #FFF 100%);
+    border-radius: 8px;
+    width: 305px;
+    height: 335px;
+    cursor: pointer;
+    margin-bottom: 60px;
+    backdrop-filter: blur(1000px);
+    transition: all 0.5s;
+}
+
+.card:hover {
+    box-shadow: 15px 0px 35px;
+}
+
+.text-card {
+    border-radius: 8px;
+    height: 335px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text-card h2{
+    font-family: font-titulo;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+
+.text-card p {
+    font-family: font-paragrafo;
+    color: white;
+}
+
+.text-card h2, p {
+    padding: 10px;
+}
+
+/* FOOTER */
+
+footer {
+    background-image: linear-gradient(335deg, #45afe5 30%, #F6BA45 80%, #F6BA45 30%);
+    height: 581px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h5 {
+    color: white;
+    font-family: font-titulo;
+    font-size: 40px;
+    margin-top: 100px;
+}
+
+footer hr {
+    margin-bottom: 25px;
+    width: 200px;
+    border: 1px solid #f9aa01;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box1-footer {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    font-family: font-paragrafo;
+    font-size: 15px;
+}
+
+.social-box-footer {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.box2-footer ul {
+    height: 100px;
+    font-family: font-paragrafo;
+    font-size: 15px;
+    margin-top: 34px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.inside {
+    list-style-position: none;
+}
+
+.box2-footer li a:hover {
+    color: #7F5BF5;
+    transition: 0.2s;
+}
+
+.box3-footer h2 {
+    color: white;
+    font-family: font-titulo;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+
+.box3-footer p {
+    color: black;
+    font-size: 16px;
+    font-family: "font-paragrafo";
+    padding-left: 0;
+}
+
+.input-gradient {
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    background:
+        linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)) border-box;
+
+    border-image-slice: 1;
+    border: 1px solid transparent;
+}
+
+.box4-footer .input-gradient input {
+    color: white;
+    padding-left: 16px;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+    background-image: linear-gradient(90deg, #BBAACC 0%, rgba(217, 217, 217, 0) 103.86%);
+    backdrop-filter: blur(5px);
+    outline: none;
+}
+
+.box4-footer input::placeholder {
+    font-weight: bold;
+    color: black;
+    font-family: "font-paragrafo";
+    font-size: 16px;
+    margin-right: 16px;
+}
+
+.box4-footer button {
+    width: 100%;
+    height: 40px;
+    background-color: #f9aa01;
+    color: black;
+    font-family: "font-titulo";
+    font-size: 24px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 15px;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 46px;
+}
+
+.footer-bottom a {
+    align-self: flex-end;
+    margin-top: 80px;
+    margin-right: 18px;
+}
+
+.copyright {
+    color: black;
+    font-family: "font-paragrafo";
+    align-self: center;
+}
