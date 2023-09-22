@@ -33,6 +33,19 @@ header {
     height: 90px;
 }
 
+/* display none desktop */
+#icone-hamburger, #icone-pontilhado{
+    display: none;
+}
+
+.info-mobile {
+    display: none;
+}
+
+.icons-mobile-toggle {
+    display: none;
+}
+
 /* header-flex -> responsável pela organização dos componentes do header */
 .header-flex {
     display: flex;
@@ -394,4 +407,80 @@ li a {
     color: black;
     font-family: "font-paragrafo";
     align-self: center;
+}
+
+/* MEDIA SCREEMM */
+
+@media screen and (max-width:767px) {
+    #icone-hamburger, #icone-pontilhado{
+        display: block;
+    }
+
+    .input-search{
+        display: none;
+    }
+
+    .mostrarMenu{
+        left: 0 !important;
+        opacity: 1 !important;
+    }
+
+    #links-left-mobile{
+        position: fixed;
+        height: 89.5vh;
+        top: 90px;
+        left: -270vw;
+        width: 270vw;
+        z-index: 1000;
+        transition: left 0.4s, opacity 0.5s;
+        background-image: linear-gradient(180deg, #4E53D4 0%, rgba(69, 48, 71, 0.39) 100%);
+        display: flex;
+        font-family: font-paragrafo;
+        color: white;
+        opacity: 0;
+    }
+
+    .nav-link {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .info-mobile {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .icons-mobile-toggle{
+        display: block;
+        display: flex;
+        gap: 40px;
+    }
+
+    .links-header{
+        position: fixed;
+        right: 140px;
+        top: 90px;
+        height: 196px;
+        background-image: linear-gradient(180deg, #4E53D4 0%, rgba(69, 48, 71, 0.39) 100%);
+    }
+
+    .nav-icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        width: 80px;
+    }
+
+    .logo-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }

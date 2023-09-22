@@ -11,14 +11,27 @@
 <body>
     <header id="Header">
         <div class="container-grid header-flex">
-            <div class="logo-header"><img src="Assets/images/Senai_Shoes_Logo_1logo-removebg-preview 1.png"
-                    alt="Logo site">
+            <div class="logo-header">
+                <img onclick="mostrarMenu()" id="icone-hamburger" src="Assets/icons/Botões lado esquerdo.png" alt="icone hamburger" > 
+                <img src="Assets/images/Senai_Shoes_Logo_1logo-removebg-preview 1.png" alt="Logo site"> 
+                <img id="icone-pontilhado" src="Assets/icons/Botões lado direito.png" alt="icone pontilhado">
+                    
             </div>
-            <nav class=" links-header">
+            <nav class=" links-header " id="links-left-mobile">
                 <ul class="nav-link">
                     <li><a href="Index.html">Início</a></li>
                     <li><a href="#main-produtos">Produto</a></li>
                     <li><a href="#Footer">Sobre Nós</a></li>
+
+                    <div class="info-mobile">
+                        <li>Sapataria@sapataria.com</li>
+                        <li>(11) 99999-9999</li>
+                    </div>
+                    <div class="icons-mobile-toggle">
+                        <img src="Assets/icons/mdi_instagram.png" alt="">
+                        <img src="Assets/icons/ic_outline-facebook.png" alt="">
+                        <img src="Assets/icons/mdi_linkedin.png" alt="">
+                    </div>
                 </ul>
             </nav>
 
@@ -185,6 +198,17 @@
             <p class="copyright">©Copyright2022-GamerJogosDigitais</p>
         </div>
     </footer>
+
+    <script>
+        function mostrarMenu() {
+            document.getElementById("links-left-mobile").classList.toggle("mostrarMenu");
+        }
+    </script>
+     <script>
+        function mostrarMenuUser() {
+            document.getElementById("menu-user").classList.toggle("menu-user");
+        }
+    </script>
 </body>
 
 </html>
