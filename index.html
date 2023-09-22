@@ -14,7 +14,7 @@
             <div class="logo-header">
                 <img onclick="mostrarMenu()" id="icone-hamburger" src="Assets/icons/Botões lado esquerdo.png" alt="icone hamburger" > 
                 <img src="Assets/images/Senai_Shoes_Logo_1logo-removebg-preview 1.png" alt="Logo site"> 
-                <img id="icone-pontilhado" src="Assets/icons/Botões lado direito.png" alt="icone pontilhado">
+                <img onclick="mostrarMenuUser()" id="icone-pontilhado" src="Assets/icons/Botões lado direito.png" alt="icone pontilhado">
                     
             </div>
             <nav class=" links-header " id="links-left-mobile">
@@ -39,7 +39,7 @@
                 <input type="text" placeholder="Pesquise Aqui">
             </div>
 
-            <nav class="links-header">
+            <nav class="links-header" id="links-right-mobile">
                 <ul class="nav-icon">
                     <li><a href=""><img src="Assets/icons/ph_bag.png" alt="imagem de compra"></a></li>
                     <li><a href=""><img src="Assets/icons/prime_user.png" alt="imagem user"></a></li>
@@ -206,7 +206,7 @@
     </script>
      <script>
         function mostrarMenuUser() {
-            document.getElementById("menu-user").classList.toggle("menu-user");
+            document.getElementById("links-right-mobile").classList.toggle("mostrarMenuUser");
         }
     </script>
 </body>
