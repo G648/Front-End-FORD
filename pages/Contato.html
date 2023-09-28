@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+    <link rel="stylesheet" type="text/css" href="/contato.css">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="container-grid header-flex">
+            <div class="logo-header">
+                <img onclick="mostrarMenu()" id="icone-hamburger" src="/Assets/icons/Botões lado esquerdo.png"
+                    alt="icone hamburger">
+                <img src="/Assets/images/Senai_Shoes_Logo_1logo-removebg-preview 1.png" alt="Logo site">
+                <img id="icone-pontilhado" src="/Assets/icons/Botões lado direito.png" alt="icone pontilhado">
+
+            </div>
+            <nav class=" links-header " id="links-left-mobile">
+                <ul class="nav-link">
+                    <li><a href="/index.html">Início</a></li>
+                    <li><a href="#main-produtos">Produto</a></li>
+                    <li><a href="#Footer">Sobre Nós</a></li>
+                    <li><a href="/pages/Contato.html">Contato</a></li>
+
+                    <div class="info-mobile">
+                        <li>Sapataria@sapataria.com</li>
+                        <li>(11) 99999-9999</li>
+                    </div>
+                    <div class="icons-mobile-toggle">
+                        <img src="/Assets/icons/mdi_instagram.png" alt="">
+                        <img src="/Assets/icons/ic_outline-facebook.png" alt="">
+                        <img src="/Assets/icons/mdi_linkedin.png" alt="">
+                    </div>
+                </ul>
+            </nav>
+            <div class="input-search">
+                <input type="text" placeholder="Pesquise Aqui">
+            </div>
+
+            <nav class="links-header">
+                <ul class="nav-icon">
+                    <li><a href=""><img src="/Assets/icons/ph_bag.png" alt="imagem de compra"></a></li>
+                    <li><a href=""><img src="/Assets/icons/prime_user.png" alt="imagem user"></a></li>
+                    <li><a href=""></a> <img src="/Assets/icons/material-symbols_login.png" alt="login"></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container-grid">
+            <div class="titulo-forms">
+                <h1> 
+                    Contato
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Iusto natus ab nam optio facilis velit libero laboriosam quas fuga omnis.
+                </p>
+            </div>
+            <form >
+                <fieldset class="contorno-form form-flex">
+                    <legend>Entre em contato conosco...</legend>
+
+                    <div class="info-user info-flex">
+                        <div class="form input-gradient">
+
+                            <label for="nome"> <strong>Nome</strong> </label>
+                            <input type="text" name="nome" id="nome" placeholder="Digite o seu primeiro nome..." required>
+                        </div>
+
+                        <div class="form input-gradient">
+
+                            <label for="sobrenome"> <strong>Sobrenome</strong></label>
+                            <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome..." required>
+                        </div>
+
+                        <div class="form input-gradient">
+
+                            <label for="email"><strong>Email</strong></label>
+                            <input type="email" name="emailuser" id="emailuser" placeholder="Informe seu melhor email..." required>
+                        </div>
+
+                        <div class="form input-gradient">
+
+                            <label for="">Sobre o que voce quer falar ?</label>
+                            <select name="valores" id="valores">
+                                <option selected disabled>Selecione uma opção</option>
+                                <option value="vendas">vendas</option>
+                                <option value="marketing">marketing</option>
+                                <option value="Trabalhe conosco">Trabalhe conosco</option>
+                                <option value="Suporte">Suporte</option>
+                            </select>
+                             
+                        </div>
+
+                        <div class="form">
+                            <label for="">Nos conte o que deseja...</label>
+                            <textarea name="caso" id="caso" cols=60" rows="6" placeholder="Digite aqui..."></textarea>
+                        </div>
+
+                        <button type="submit">
+                            Enviar
+                        </button>
+                    </div>
+
+                </fieldset>                
+            </form>
+        </div>
+    </main>
+    <footer>
+        <footer id="Footer">
+            <section class="container-grid footer-flex">
+                <!-- article criado para informações da logo e links de midias sociais -->
+                <article class="box1-footer">
+                    <img src="/Assets/images/Senai_Shoes_Logo_1logo-removebg-preview 1.png" alt="">
+
+                    <p>Nosso sucesso na criação de soluções de negócios se deve em grande parte a nossa equipe talentosa
+                        e
+                        altamente comprometida.</p>
+
+                    <div class="social-box-footer">
+                        <a href=""> <img src="/Assets/icons/mdi_instagram.png" alt=""></a>
+                        <a href=""> <img src="/Assets/icons/ic_outline-facebook.png" alt=""></a>
+                        <a href=""> <img src="/Assets/icons/mdi_linkedin.png" alt=""></a>
+                    </div>
+                </article>
+
+                <article class="box2-footer">
+                    <h5>Links Úteis</h5>
+                    <hr>
+
+                    <ul class="inside">
+                        <li><a href="#Header">Ínicio</a></li>
+                        <li><a href="#main-produtos">Produtos</a></li>
+                        <li><a href="#Footer">Saiba Mais</a></li>
+                    </ul>
+                </article>
+
+                <article class="box3-footer">
+                    <h5>Contatos</h5>
+                    <hr>
+
+                    <h2>Localização</h2>
+                    <p>Rua Moreira de Godói, 226 - Ipiranga - SP</p>
+
+                    <h2>Faça Parte do time:</h2>
+                    <p>sapataria@sapataria.com</p>
+
+                    <h2>Telefone</h2>
+                    <p>(11) 99999-9999</p>
+                </article>
+
+                <article class="box4-footer">
+                    <h5>Newsletter</h5>
+                    <hr>
+
+                    <form action="" class="form-news"></form>
+                    <div class="input-gradient">
+                        <input type="email" placeholder="Informe seu email...">
+                    </div>
+                    <button type="submit">
+                        Enviar
+                    </button>
+                </article>
+            </section>
+            <div class="footer-bottom container-grid-d container-grid">
+
+                <a href="#header"><input class="top-button" type="image" src="/Assets/icons/botão subir.png"></a>
+
+                <p class="copyright">©Copyright2022-Senai Shoes</p>
+            </div>
+        </footer>
+
+        <script>
+            function mostrarMenu() {
+                document.getElementById("links-left-mobile").classList.toggle("mostrarMenu");
+            }
+        </script>
+        <script>
+            function mostrarMenuUser() {
+                document.getElementById("menu-user").classList.toggle("menu-user");
+            }
+        </script>
+    </footer>
+</body>
+
+</html>
