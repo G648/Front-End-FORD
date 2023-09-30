@@ -15,6 +15,11 @@
     box-sizing: border-box;
 }
 
+main {
+    background-color: #fffafa;
+    height: 1055px;
+}
+
 .titulo-forms{
     display: flex;
     align-items: center;
@@ -34,13 +39,16 @@
     font-family: font-paragrafo;
 }
 
+
 .contorno-form{
-    height: 600px;
+    height: 700px;
     font-size: 20px;
     font-weight: bold;
     font-family: font-paragrafo;
     padding-left: 5px;
     margin-bottom: 50px;
+    border: 1px solid purple;
+    border-radius: 8px;
 }
 
 .form label{
@@ -51,15 +59,16 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding-bottom: 5px;
+    padding-bottom: 25px;
 }
 
 .info-flex{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: column;
-    height: 510px;
+    height: 550px;
     align-items: center;
+    
 }
 
 input, select, textarea{
@@ -97,3 +106,4 @@ input::placeholder {
     font-size: 16px;
     margin-right: 16px;
 }
+
