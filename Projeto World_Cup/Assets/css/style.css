@@ -1,0 +1,87 @@
+@font-face {
+    font-family: Inter-Bold;
+    src: url(../fonts/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: Inter-Black;
+    src: url(../fonts/Inter-Black.ttf);
+}
+
+@font-face {
+    font-family: Inter-Regular;
+    src: url(../fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: font-titulo;
+    src: url();
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*  Começando a estilização do header */
+
+.container-grid{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header-flex{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.img-header{
+    display: flex;
+    align-items: center;
+}
+
+.links-flex {
+    width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.links-nav a{
+    text-decoration: none;
+    font-family: Inter-Bold;
+    font-size: 20px;
+    color: #3C3939;
+}
+
+.info-card-groups {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    font-family: Inter-Regular;
+    font-size: 20px;
+}
+
+.flex-cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card-games{
+    height: 380px;
+    width: 300px;
+    border-radius: 8px;
+    background-color: #F4F4F4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: Inter-Bold;
+    padding-left: 20px;
+}
