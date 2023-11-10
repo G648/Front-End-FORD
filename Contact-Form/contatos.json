@@ -1,0 +1,19 @@
+{
+  "contatos": [
+    {
+      "nome": "Artur Fiorentino",
+      "email": "af@senai.com",
+      "ddd": "11",
+      "CEP": "09840520",
+      "complemento": "Casa",
+      "rua": "Rua Maria Copeinski",
+      "numeroRua": "454",
+      "bairro": "Dos Casa",
+      "numero": "913622542",
+      "cidade": "São Bernardo do Campo",
+      "estado": "SP",
+      "texto": "testando",
+      "id": 1
+    }
+  ]
+}
