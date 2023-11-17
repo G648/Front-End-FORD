@@ -1,18 +1,15 @@
-//var + identificador + atribuição + valor da variável
-let nome = "carro"
-let fabricante = "renault"
-let modelo = "sandero"
-let anoFabricacao = "2010"
+//    camelCase
+var fabricanteCarro = "renault" 
+var modeloCarro = 'logan'
+var precoCarro = 16000
+var anoCarro = 2018
 
-console.log(nome);
-console.log(fabricante);
-console.log(modelo);
-console.log(anoFabricacao);
+// fabricante: renault, modelo: logan, preco: 16000, ano: 2018
 
-nome = "moto"
-console.log(nome);
+console.log("fabricante: " + fabricanteCarro + ", modelo: " + modeloCarro + ", preco: " + precoCarro + ", ano: " + anoCarro)
 
-// fazer primeiro o log e depois atribuir as variávies com os alunos!
-// importante definir nomes para as variáveis!
+// modeloCarro = "sandero"
+// console.log(modeloCarro)
 
-
+// modeloCarro = "clio"
+// console.log(modeloCarro)
