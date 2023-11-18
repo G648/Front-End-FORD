@@ -1,0 +1,18 @@
+// let nomeArray
+
+// console.log(typeof nomeArray);
+
+
+
+// console.log(null === 0);
+
+// console.log(typeof(NaN));
+
+
+var nome = "Guilherme" //string
+var idade = 21 //number
+var semDefinicao //undefined
+var nulo = null //object
+
+
+console.log(typeof nulo);
