@@ -12,7 +12,7 @@ const avaliacao = 9.8
 const avaliacao2 = 6.8
 
 const total = avaliacao * peso01 + avaliacao * peso02
-const media = total / peso01+peso02
+const media = total / peso01 + peso02
 
 //temos um jeito de limitar as casas decimais depois da vigula, através do comando, TO Fixed
 console.log(media.toFixed(1));
