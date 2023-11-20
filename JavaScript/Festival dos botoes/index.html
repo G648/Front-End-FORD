@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>JavaScript</title>
+</head>
+
+<body>
+
+    <div id="manipula">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quibusdam distinctio modi omnis earum
+            incidunt, natus assumenda hic. Repellendus, est odit dicta voluptatem nihil nostrum omnis. Molestiae alias
+            soluta exercitationem!
+
+        </p>
+
+        <p class="paragrafo">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa libero necessitatibus vitae vel repellendus
+            iure dolore delectus quam sit exercitationem dolorum optio corrupti ipsa deleniti hic, maiores porro eveniet
+            modi?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, cumque facilis placeat dicta ad rerum
+            laboriosam, perspiciatis laudantium doloribus nihil dolorum deleniti in. Voluptas eveniet eius, dolore
+            impedit unde aut.
+        </p>
+    </div>
+    <br>
+    <hr>
+          <!-- array 0- -->
+    <h2 class="chamada">Clique nos botões para executar alguma função</h2>
+          <!-- array 1 -->
+    <h2 class="chamada"> Olá</h3>
+        <div id="botoes">
+                            <!--  0          1 -->
+            <!-- var classes = [chamada, chamada] -->
+
+            <!--  botão 01 - atualizar a página  -->
+            <!-- atualiza a página  -->
+            <input type="button" name="" id="" value="atualizar" onclick="window.location.reload()">
+
+            <!-- Botão 02 - alterar o tamanho da fonte -->
+            <input type="button" name="" id="" value="botão 02" onclick="mudaTamanhoFont()">
+
+            <!-- botão 03 - Alterar a cor da font -->
+            <input type="button" name="" id="" value="botão 03" onclick="mudaCor()">
+
+            <!-- botão 04 - Alterar a cor do background da div -->
+            <input type="button" name="" id="" value="botão 04" onclick="backgroudParagrafo()">
+
+            <!--  botão 05 - mudar a font dos parágrafos para itálico -->
+            <input type="button" name="" id="" value="botão 05" onclick="fontToItalic()">
+
+            <!-- botão 06 - mudar a font dos parágrafor para negrito -->
+            <input type="button" name="" id="" value="botão 06" onclick="fontToBold()">
+
+            <!-- botão 07 - incluir uma border preta em volta da  div -->
+            <input type="button" name="" id="" value="botão 07" onclick="blackBorder()">
+
+            <!-- botão 08 - remover a border preta em volta da div -->
+            <input type="button" name="" id="" value="botão 08" onclick="removeBorder()">
+
+            <!-- botão 09 - Esconder a div e parecer invisível -->
+            <input type="button" name="" id="" value="botão 09" onclick="hideDiv()">
+
+            <!-- botão 10 - faz a div aparecer novamente -->
+            <input type="button" name="" id="" value="botão 10" onclick="showDiv()">
+
+            <!-- botão 11 - alterar o texto do h2 para "não mexer nesse botão" -->
+            <input type="button" name="" id="" value="botão 11" onclick="changeText()">
+
+            <!-- botão 12 - mudar a cor do backgroud apenas do paragrado da classe "paragrafo" -->
+            <input type="button" name="" id="" value="botão 12" onclick="changeBackgroudParagrafo()">
+
+            <!--  botão 13 - muda a cor apenas de um botão pelo nome da tag input -->
+            <input type="button" name="" id="" value="botão 13" onclick="changeColorInput()">
+
+            <!-- botão 14 - muda a cor de todos os botões pelo nome da tag e uma lógica de array -->
+            <input type="button" name="" id="" value="botão 14" onclick="changeAllColorButtons()">
+
+            <!-- botão 15 - conta quantos botões existem na página -->
+            <input type="button" name="" id="" value="botão 15" onclick="buttonsLength()">
+
+            <!--  botão 16 - substitui o segundo parágrafo por *** -->
+            <input type="button" name="" id="" value="botão 16" onclick="replace()">
+
+            <!-- botão 17 - troca a cor do backgroud da página -->
+            <input type="button" name="" id="" value="botão 17" onclick="backgroundPage()">
+
+            <!-- botão 18 - é o que acontece com o aluno SENAI-Ford -->
+            <input type="button" name="" id="" value="botão 18" onclick="alunoSenai()">
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <img src="./pc xuxa.jfif" id="image" alt="laptop da xuxa">
+        <script>
+            //aqui começa a brincadeira com Js
+
+            //função pra trocar a fonte do parágrafo
+            function mudaTamanhoFont() {
+                document.getElementById("manipula").style.fontSize = "36px"
+            }
+            //botão 03 - função para alterar a cor do parágrafo
+            function mudaCor() {
+                document.getElementById("manipula").style.color = "blue"
+            }
+
+            //botão 04 -  Alterar a cor do background da div
+            function backgroudParagrafo() {
+                document.getElementById('manipula').style.backgroundColor = "yellow"
+            }
+
+            //botão 05 - mudar a font dos parágrafos para itálico
+            function fontToItalic() {
+                document.getElementById("manipula").style.fontStyle = "italic"
+            }
+
+            //botão 06 - mudar a font dos parágrafro para negrito
+            function fontToBold() {
+                document.getElementById("manipula").style.fontWeight = "900"
+            }
+
+            //botão 07 - incluir uma border preta em volta da  div
+            function blackBorder() {
+                document.getElementById("manipula").style.border = "2px solid black"
+            }
+
+            //botão 08 - remover a border preta em volta da div
+            function removeBorder() {
+                document.getElementById('manipula').style.border = "none"
+            }
+
+            //botão 09 - Esconder a div e parecer invisível
+            function hideDiv() {
+                document.getElementById('manipula').style.display = "none"
+            }
+
+            //botão 10 - fazer aparecer a nossa div
+            function showDiv() {
+                document.getElementById('manipula').style.display = "block"
+            }
+
+            //botão 11 - alterar o texto do h2 para "não mexer nesse botão"
+            function changeText() {
+                //    var titulo = document.querySelector('.chamada')
+
+                //    titulo.textContent = "não mexer no botão"
+
+                document.getElementsByClassName("chamada")[0].innerHTML = "Nesse botão não"
+
+            }
+
+            //botão 12 - mudar a cor do backgroud apenas do paragrado da classe "paragrafo"
+            function changeBackgroudParagrafo(params) {
+                document.getElementById("manipula").getElementsByClassName("paragrafo")[0].style.backgroundColor = "blue"
+            }
+
+            //botão 13 - muda a cor apenas de um botão pelo nome da tag input
+            function changeColorInput() {
+                document.getElementsByTagName("input")[12].style.backgroundColor = "purple"
+            }
+
+            //botão 14 - muda a cor de todos os botões pelo nome da tag e uma lógica de array
+            function changeAllColorButtons() {
+
+                const botao = document.getElementsByTagName('input')
+
+                for (let indice = 0; indice < botao.length; indice+1) {
+
+                    botao[indice].style.backgroundColor = "red"         
+
+                }           
+
+            }
+
+            //botão 15 - conta quantos botões existem na página
+            function buttonsLength() {
+                let numInputs = document.getElementsByTagName("input")
+
+                document.getElementById("manipula").innerHTML = numInputs.length
+            }
+
+            //botão 16 - substitui o segundo parágrafo por ***
+            function replace() {
+                document.getElementsByClassName("paragrafo")[0].innerHTML = "*****"
+            }
+
+            //botão 17 - troca a cor do backgroud da página
+            function backgroundPage() {
+                document.querySelector("body").style.backgroundColor = "black"
+            }
+
+            //botão 18 - é o que acontece com o aluno SENAI-Ford
+            function alunoSenai() {
+                let img = document.getElementById("image")
+                
+                img.setAttribute('src', 'alienware.jfif')
+            }
+
+            //aqui termina a brincadeira com Js
+        </script>
+</body>
+
+</html>

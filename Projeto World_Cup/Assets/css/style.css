@@ -1,0 +1,227 @@
+@font-face {
+    font-family: Inter-Bold;
+    src: url(../fonts/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: Inter-Black;
+    src: url(../fonts/Inter-Black.ttf);
+}
+
+@font-face {
+    font-family: Inter-Regular;
+    src: url(../fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: font-titulo;
+    src: url();
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*  Começando a estilização do header */
+
+.container-grid{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header-flex{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.img-header{
+    display: flex;
+    align-items: center;
+}
+
+.links-flex {
+    width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.links-nav a{
+    text-decoration: none;
+    font-family: Inter-Bold;
+    font-size: 20px;
+    color: #3C3939;
+}
+
+.banner-fifa{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 50px;
+    height: 600px;
+    background-image: url(../img/Group\ 42.png);
+}
+
+#img {
+    height: 420px;
+    width: 350px;
+}
+
+.info-card-groups {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+    font-family: Inter-Regular;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+
+
+.flex-cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card-games{
+    height: 380px;
+    width: 300px;
+    border-radius: 8px;
+    background-color: #F4F4F4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: Inter-Bold;
+    padding-left: 20px;
+}
+
+.card-games>h3{
+    display:  flex;
+    justify-content: center;
+}
+
+.img-flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-flex>p{
+    width: 120px;
+}
+
+.botao-card-grupos{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.botao-grupos{
+    cursor: pointer;
+    background-color: #F4F4F4;
+    border-radius: 50%;
+}
+
+/*  iniciando estilização card-next-games */
+
+/* Estilização dos titulos */
+
+
+
+.info-next-games{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Estilização do titulo h1 */
+.info-next-games>h1{
+    font-family: inter-regular;
+    font-size: 30px;
+}
+
+/* Estilização do titulo p */
+.info-next-games>p{
+    font-family: inter-regular;
+    font-size: 20px;
+}
+
+/* Estilização do pai dos cards */
+.flex-next-cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 780px;
+}
+
+/* Estilização das propriedades dentro dos cards */
+.card-games-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: #F4F4F4;
+}
+
+.card-games-info>img{
+    margin: 10px;
+}
+
+.card-games-info>h2{
+    width: 50px;
+    font-family: inter-regular;
+    font-size: 20px;
+}
+
+.hora-data-jogo{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100px;
+    width: 160px;
+    font-family: inter-bold;
+    color: #8D1B3D;
+}
+
+
+
+/* REALIZANDO ESTILIZAÇÃO DO FOOTER */
+
+footer{
+    background-color: #8D1B3D;
+    height: 340px;
+}
+
+.footer-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 340px;
+}
+
+.info-section-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 190px;
+    width: 162px;
+}
+
+.info-section-footer {
+    font-family: inter-bold;
+    font-size: 15px;
+    color: white;
+}

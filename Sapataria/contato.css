@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'font-paragrafo';
+    src: url(Assets/Fonts/Inter/static/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'font-titulo';
+    src: url(Assets/Fonts/Titillium_Web/TitilliumWeb-Black.ttf);
+}
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: #fffafa;
+    height: 1055px;
+}
+
+.titulo-forms{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+
+.titulo-forms>h1 {
+    font-family: font-titulo;
+    font-weight: 20px;
+    font-size: 40px;
+    letter-spacing: 1px;
+    margin-top: 50px;
+}
+
+.titulo-forms>p{
+    font-family: font-paragrafo;
+}
+
+
+.contorno-form{
+    height: 700px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: font-paragrafo;
+    padding-left: 5px;
+    margin-bottom: 50px;
+    border: 1px solid purple;
+    border-radius: 8px;
+}
+
+.form label{
+    display: block;
+}
+
+.form-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 25px;
+}
+
+.info-flex{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 550px;
+    align-items: center;
+    
+}
+
+input, select, textarea{
+    border-radius: 5px;    
+}
+
+.input-gradient {
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    background:
+        linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)) border-box;
+
+    border-image-slice: 1;
+    border: 1px solid transparent;
+}
+
+.input-gradient input {
+    color: white;
+    padding-left: 16px;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+    background-image: linear-gradient(90deg, #BBAACC 0%, rgba(217, 217, 217, 0) 103.86%);
+    backdrop-filter: blur(5px);
+    outline: none;
+}
+
+input::placeholder {
+    font-weight: bold;
+    color: black;
+    font-family: "font-paragrafo";
+    font-size: 16px;
+    margin-right: 16px;
+}
+

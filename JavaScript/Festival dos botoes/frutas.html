@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let frutas = ["banana", "morango", "uvas"]
+        
+        console.log(frutas);
+        // interpolação
+        console.log(`a quantidade de frutas pe de: ${frutas.length} `);
+        
+        console.log();
+
+        frutas.push("mamao")
+        console.log(`a quantidade de frutas pe de: ${frutas.length} `);
+
+        for (let i = 0; i < frutas.length; i++) {
+        console.log(` Fruta ${i +1} ${frutas[i]}`);
+        }
+
+      
+        // frutas.forEach(function(fruta, i) {
+        //     console.log(`Fruta${i +1} ${fruta}`);
+        // })
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!-- Faça um programa JavaScript que receba 3 números informados pelo usuário e em seguida apresente uma mensagem de alerta informando qual é o maior número dentre os números informados. -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exercício 01</h1>
+
+    <script>
+        let numero01 = prompt("Informe o primeiro número", "100");
+        let numero02 = prompt("Informe o segundo número", "200");
+        let numero03 = prompt("Informe o terceiro número", "300");
+        if ((numero01 > numero02) && (numero01 > numero03)) mensagem = "O primeiro número informado é maior!"
+        else
+        if ((numero02 > numero01) && (numero02 > numero03)) mensagem = "O segundo número informado é maior!"
+        else
+        if ((numero03 > numero01) && (numero03 > numero02)) mensagem = "O terceiro número informado é maior!"
+        else
+        mensagem = "Os números são iguais ou nada foi informado";
+        alert(mensagem);
+      </script>
+</body>
+</html>
+
+
+<!-- 
+    Entendendo o código...
+
+    let variável = ( ... )
+
+Define uma variável e atribui a ela um valor;
+O valor atribuído às variáveis definidas serão as entradas do usuário através do método prompt().
+prompt("...");
+
+Esse método/função exibe uma caixa de alerta com uma mensagem específica e aguarda uma entrada (informação) do usuário;
+Uma caixa de alerta/entrada é frequentemente utilizado se você quer ter certeza de entrar com uma informação antes de entrar em uma página, por exemplo;
+Esse alerta forçará o navegador a apresentar a mensagem e impedirá o usuário de acessar outras partes da página até que a caixa seja fechada;
+Esse método retorna o valor de entrada e foi definido uma variável que receberá essa informação;
+O primeiro argumento passado para a função é uma mensagem personalizada; o segundo argumento determina um valor padrão para a informação solicitada;
+Se o usuário clicar em "OK" o valor informado será retornado. Se o usuário clicar em "cancelar" o método retorna null.
+alert("Mensagem");
+
+Esse método/função exibe uma caixa de alerta com uma mensagem especificada e um botão OK;
+Uma caixa de alerta é frequentemente utilizado se você quer ter certeza de apresentar uma informação para o usuário;
+Esse alerta forçará o navegador a apresentar a mensagem e impedirá o usuário de acessar outras partes da página até que a caixa seja fechada.
+Resultado no navegador:
+
+Uma caixa de alerta será apresentada aguardando uma entrada. -->

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="titulo">
+            <h1>
+                Página de criação de formulários
+            </h1>
+        </div>
+    </header>
+
+    <!-- Primeiro formulário usando label e input  -->
+    <form class="form01">
+            <label for="primeiro Nome">Nome</label>
+            <input type="text" name="Nome01" id="" placeholder="digite seu nome"><br>
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" name="Nome02" id="" placeholder="digite seu sobrenome">
+    </form>
+
+        <hr>
+        <!-- Form para realizar o cadastro de uma pessoa -->
+
+    <form class="form02">
+        <label for="primeiro nome">Nome</label>
+        <input type="text" name="nomeUser" id="" placeholder="Informe o seu primeiro nome...">
+        <label for="segundo nome">Sobrenome</label>
+        <input type="text" name="nomeUser" id="" placeholder="Informe o seu sobrenome...">
+        <label for="email">Email</label>
+        <input type="email" name="emailuser" placeholder="Informe o seu melhor email...">
+        <label for="idade">Data de nascimento</label>
+        <input type="date" name="idade do ususario">
+        <h4>Informe o seu genero</h4>
+        <input type="radio" name="genero" >
+        <label for="genero">Masculino</label>
+        <input type="radio" name="genero">
+        <label for="genero">Feminino</label>
+        <label for="comentario">Comentário</label>
+        <textarea name="" id="" cols="60" rows="10" placeholder="Descreva sobre você"></textarea>
+        <button type="submit" onclick="cliqueAqui()">Cadastre-se</button>
+    </form>
+
+    <script>
+        function cliqueAqui() {
+            alert("Usuario Cadastrado com sucesso!")
+        }
+    </script>
+
+</body>
+</html> 

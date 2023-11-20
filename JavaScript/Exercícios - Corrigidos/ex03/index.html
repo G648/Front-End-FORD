@@ -1,0 +1,50 @@
+<!-- Faça um programa JavaScript em que o usuário informará 3 números e o programa calculará a média aritmética desses números. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nota01 = parseInt(prompt("Informe o primeiro número", "9"));
+        let nota02 = parseInt(prompt("Informe o segundo número", "4"));
+        let nota03 = parseInt(prompt("Informe o terceiro número", "3"));
+        alert("A média dos números informados é:" + (nota01+nota02+nota03)/3);
+      </script>
+</body>
+</html>
+
+
+<!-- let variável = ( ... )
+
+Define uma variável e atribui a ela um valor;
+O valor atribuído às variáveis definidas serão as entradas do usuário através do método prompt().
+
+parseInt("...");
+
+Esse método analisa uma cadeia de caracteres e retorna um número inteiro;
+Se o primeiro caractere não puder ser convertido para um número, a função retornará NaN;
+A propriedade NaN representa valor "Not-a-Number". Esta propriedade indica que um valor não é um número válido.
+
+prompt("...");
+
+Esse método exibe uma caixa de alerta com uma mensagem específica e aguarda uma entrada (informação) do usuário;
+Uma caixa de alerta/entrada é frequentemente utilizado se você quer ter certeza de entrar com uma informação antes de entrar em uma página, por exemplo;
+Esse alerta forçará o navegador a apresentar a mensagem e impedirá o usuário de acessar outras partes da página até que a caixa seja fechada;
+Esse método retorna o valor de entrada e foi definido uma variável que receberá essa informação;
+O primeiro argumento passado para a função é uma mensagem personalizada; o segundo argumento determina um valor padrão para a informação solicitada;
+Se o usuário clicar em "OK" o valor informado será retornado. Se o usuário clicar em "cancelar" o método retorna null.
+
+alert("Mensagem");
+
+Esse método/função exibe uma caixa de alerta com uma mensagem especificada e um botão OK;
+Uma caixa de alerta é frequentemente utilizado se você quer ter certeza de apresentar uma informação para o usuário;
+Esse alerta forçará o navegador a apresentar a mensagem e impedirá o usuário de acessar outras partes da página até que a caixa seja fechada.
+
+Resultado no navegador:
+
+Uma caixa de alerta será apresentada aguardando uma entrada. -->

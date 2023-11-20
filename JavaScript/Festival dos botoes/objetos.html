@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        //criação de um objeto literal
+       let pessoa1 = {
+        nome : "Guilherme",
+        sobrenome : "Amorim",
+        idade : 21
+       }
+
+        //criação de um objeto tradicional
+        let pessoa = new Object();
+
+        //objeto -> propriedade 
+        pessoa.nome = "damião";
+        pessoa.idade = 25;
+        pessoa.caracteristica = "usa bone";
+
+        console.log(pessoa);
+        console.log(pessoa1);
+                        //      0           1
+       let exibirNomes = [pessoa.nome,pessoa1.nome]
+
+    //    for (let index = 0; index < exibirNomes.length; index++) {
+    //     console.log(`Nome ${index}: ${exibirNomes[index]}`);        
+    //    }
+
+       exibirNomes.forEach(function (nome) {
+            console.log(nome);
+       })
+
+    </script>
+</body>
+</html>
