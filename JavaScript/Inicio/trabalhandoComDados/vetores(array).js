@@ -18,13 +18,13 @@ console.log(`
     ${valores[3].toFixed(2)} //limita as casas decimais em 2 após a virgula
     ${valores[10]}
     ${valores}
-    ${valores.length}
+    ${valores.length} //extensão do nosso array (numeral)
 `);
 
 // ************************ INPLEMENTAR MÉDOTOS DE ARRAY **********************
 
-// MÉTODOS DE ARRAY 
-// 1- push
+// MÉTODOS DE ARRAY 1
+// 1- push -> utilizado para adicionar itens no array (sempre na última posição!)
 const pushArray = ['girafa', "hipopotamo", "camaleão", "tartaruga"] 
 
 console.log(pushArray);
@@ -39,7 +39,7 @@ pushArray.unshift("cachorro") //insere o animal cachorro no inicio do array
 console.log(pushArray);
 
 
-// 2- pop
+// 2- pop -> remove o último item do array
 
 const popArray = ["andre", "luis", "fernanda", "mariana"]
 
@@ -56,62 +56,95 @@ console.log(popArray)
 
 const frutas = ["banana", "maça", "atemoia", "tomate"]
 
-delete frutas[1]
+// delete frutas[1]
 
 console.log(frutas);
 
-//array add novos itens no array (indice, quantidade removida, novo item)
-frutas.splice(1, 1, "teste")
+//array add novos itens no array (indice, itens a serem removidos, novo item)
+frutas.splice(1, 2, "teste")
 
 console.log(frutas);
 
-// 4- filter
+// 4- filter -> funções
 
 //                     0  1   2   3  4   5
-const filterNumber = [ 1, 50, 65, 2, 5, 100]
+const filterNumber = [ 1, 50, 65, 2, 5, 100 ]
 
 console.log(filterNumber);
 
-const numeroMenor10 = filterNumber.filter( (numerosArray) => {
+//construção de uma função                 auxiliar -> ficar responsavel por guardar os valores que tem dentro do nosso array
+const numeroMenor10 = filterNumber.filter( (qualquerCoisa) => {
 
     //bloco de código - lógica
 
         // valores
-   return numerosArray > 10
+   return qualquerCoisa > 10
 
-} )
+})
 
 console.log(numeroMenor10);
 
-// 5- map
-// 6- foreach
+// 5- map -> modifica o array existente -> criar um novo array modificado -> funções
+
+//indice          0  1  2  3  4  5 
+const arrayMap = [1, 2, 3, 4, 5, 6]
+
+//modificação do array - map
+
+const arrayModificado = arrayMap.map( (ajudante) => {
+    //começar o bloco de código 
+
+    return ajudante * 2
+
+})
+
+console.log(arrayMap);
+console.log(arrayModificado);
+
+// 6- foreach -> 
+
+const arrayString = ["carlos", "andre", "julia", "akira"]
+
+arrayString.forEach( (elements) => {
+
+     console.log(elements);
+
+} )
+
 // 7- sort
+//Crie um array de nomes e em seguida organize eles em ordem alfabética
+
+const arrayMeses = ["janeiro", "fevereiro", "março", "abril"]
+
+console.log(arrayMeses);
+
+arrayMeses.sort()
+
+console.log(arrayMeses);
+
+//sort com numeros
+const numerosArray = [40, 89, 10, 30, 12, 10000]
+
+numerosArray.sort()
+
+console.log(numerosArray);
+
+
+
 // 8- reduce
+
 
 
 //indice começando sempre do 0, valor default do array, se eu mostrar um indice que não existe, o valor retornado vai ser undefined
 
 
+
+// ***************** Exercício *******************
 //crie 2 arrays: nomes e sobrenomes
 //crie um terceiro array de NomesCompleto
 //ao final, exiba os nomes completos no console com o foreach
 //é necessário conter pelo menos 5 nomes
 //utilizar arrow functions 
-
-// const nomes = ['Arthur', 'Guilherme', 'Jeremias', 'Eduardo', 'Carlos']
-// const sobrenomes = ['Oliveira', 'Cezar', 'josé', 'Costa', 'Roque']
-
-// const nomeCompleto = nomes.map((nome, indice) => {
-//     return `${nome} ${sobrenomes[indice]}`;
-// })
-
-// nomeCompleto.forEach((nc) => {
-//     console.log(nc);
-// })
-
-
-
-
-
+//se necessário, utilize outros métodos de array.
 
 //JSON VALIDATOR - UTILIZAR PARA VERIFICAR OS OBJETOS DENTRO DO SEU ARRAY
