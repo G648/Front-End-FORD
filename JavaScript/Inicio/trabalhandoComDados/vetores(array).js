@@ -147,4 +147,35 @@ console.log(numerosArray);
 //utilizar arrow functions 
 //se necessário, utilize outros métodos de array.
 
+
+const nome = ["guilherme", "luana", "Charles", "eliane"]
+const sobrenomes = ["Amorim", "oliveira", "Darwin", "pimentel"]
+
+const nomesCompleto = nome.map( (nome, indice) => {    
+
+    //iniciar a nossa lógica
+    
+    return ` ${nome} ${sobrenomes[indice]} ` //interpolação!!!!!!!
+} )
+
+//lógica de foreach
+nomesCompleto.forEach( (nomeESobrenome) => {
+
+    console.log(nomeESobrenome)
+
+} )
+
+
+// Guilherme Amorim
+// luana oliveira ...
+
+
+
+
+
+
+
+
+
+
 //JSON VALIDATOR - UTILIZAR PARA VERIFICAR OS OBJETOS DENTRO DO SEU ARRAY

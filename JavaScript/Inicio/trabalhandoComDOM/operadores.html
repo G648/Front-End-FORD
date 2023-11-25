@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores</title>
+</head>
+<body>
+
+    <!-- fazer depois -->
+    <label for="">num1</label>
+    <input type="number" name="" id="" placeholder="informe aqui o numero">
+
+    <label for="">num2</label>
+    <input type="number" name="" id="" placeholder="informe o 2 num">
+    <script>
+
+
+
+        // console.log("olá, mundo!")
+
+        // alert("Seja bem vindo!")
+
+        // const nome = prompt("Informe o seu nome abaixo:")
+
+        // console.log(nome);
+
+        // confirm("voce tem certeza de que " + nome + " é o seu nome?") //concatenação
+        // confirm(`voce tem certeza de que ${nome } é realmente seu nome ?`) //concatenação
+
+
+        //OPERADORES ARITMÉTICOS + - / *
+
+        // const primeiroNumeroDigitado = prompt("Digite o primeiro número:") //string
+        // const segundoNumeroDigitado = prompt("Digite o segundo número:") //string
+
+        // const somaPrimeroSegundoNumero = parseInt(primeiroNumeroDigitado) * parseInt(segundoNumeroDigitado)
+
+        // console.log(somaPrimeroSegundoNumero)
+
+
+
+        //Atividade
+        //Receber 3 notas de um aluno e exibir a média final do aluno
+        //Exiba o nome do aluno e a nota final do mesmo
+        //utiliem o prompt e operadores aritméticos para isso!
+        
+        //entrada de dados
+        // const nome = prompt("informe seu nome:")
+        // const nota1 = prompt("informe a primeira nota:") //string 
+        // const nota2 = prompt("informe a segunda nota:") //string
+        // const nota3 = prompt("informe a terceira nota:") //string
+        
+        // //processamento de dados
+        // //lógica
+        // const mediaAluno = (parseInt(nota1) + parseInt(nota2) + parseInt(nota3) ) / 3
+
+        // //saída de dados
+
+        // alert(` A nota do aluno ${nome} é de: ${mediaAluno.toFixed(2)} `) //interpolação
+
+
+        //operadores condicionais (If - if composto -if encadeado)
+
+        const idade = prompt("qual é a sua idade ?")
+        const documento = prompt("voce está com documento?")
+
+        //operadores lógicos -> E (&&) OU (||)
+        //para E basta 1 ser falso e a condição será falsa
+        //para o OU basta 1ser verdadeiro para a condição ser verdadeira --Wally
+ 
+        if (idade >= 18 && documento == "sim") {
+            //boolean (verdadeiro ou falso)
+            //se condição for verdadeira 
+            alert("pode passar")
+        }else{
+            //falso
+            //se a condição não for atendida
+            alert("barrado")
+        }
+
+    </script>
+
+
+    
+</body>
+</html>
