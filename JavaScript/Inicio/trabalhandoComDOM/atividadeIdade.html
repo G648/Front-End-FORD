@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade01</title>
+</head>
+<body>
+    <script>
+        //crie um algoritmo que calcule a idade de uma pessoa em 
+        //Meses - dias - horas - minutos 
+        
+        //declara variável para meses, dias, horas e minutos
+        let meses = 12
+        let dias = 365
+        let horas = 24  
+        let minutos = 60
+
+        //entrada dos dados
+        const nomePessoa = prompt("Informe seu primeiro nome:")
+        const idadePessoa = prompt("Informe qual a idade:")
+
+        //processamento dos dados
+        let idadeMeses = idadePessoa * meses
+        let idadeDias = idadePessoa * dias
+        let idadeHoras = idadeDias * horas 
+        let idadeMinutos = idadeHoras * minutos
+
+        //Decisões (if - else)
+        
+        idadePessoa <= 0 || idadePessoa >= 100 ? alert("a idade da pessoa tem que ser maior que 0 e menor que 100") 
+        : 
+        alert(
+            `nome: ${nomePessoa}, 
+            idade em meses: ${idadeMeses}, 
+            idade em dias: ${idadeDias}, 
+            idade em horas: ${idadeHoras}, 
+            idade em minutos: ${idadeMinutos}`)
+
+
+            
+
+        // if (idadePessoa <= 0 || idadePessoa >= 100) {
+        //     alert("a idade da pessoa tem que ser maior que 0 e menor que 100")
+            
+        // }else {
+        //     //saída dos dados
+        //     alert(`nome: ${nomePessoa}, idade em meses: ${idadeMeses}, idade em dias: ${idadeDias}, idade em horas: ${idadeHoras}, idade em minutos: ${idadeMinutos}`)
+            
+        // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // //declaração de variáveis
+        // let Meses = 12;
+        // let Dias = 365;
+        // let Horas = 24;
+        // let Minutos = 60;
+
+        // //entrada de dados
+        // const nome = prompt("informe seu primeiro nome: ")
+        // const idade =  prompt("informe sua idade:")
+
+        // //processamento de dados
+        // idadeMeses = idade * Meses
+        // idadeDias = idade * Dias
+        // idadeHoras = idadeDias * Horas
+        // idadeMinutos = idadeHoras * Minutos
+
+        // //saída de dados
+        // console.log(`a idade da pessoa: ${nome} em meses, é de: ${idadeMeses}`)
+        // console.log(`a idade da pessoa: ${nome} em dias, é de: ${idadeDias}`)
+        // console.log(`a idade da pessoa: ${nome} em horas, é de: ${idadeHoras}`)
+        // console.log(`a idade da pessoa: ${nome} em minutos, é de: ${idadeMinutos}`)
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //entrada dos dados 
+        const nota1 = parseInt(prompt("Escreva a primeira nota:")) //string
+        const nota2 = prompt("Escreva a segunda nota:") //string
+        const nota3 = prompt("Escreva a terceira nota:") //string
+        const nota4 = prompt("Escreva a quarta nota:") //string
+
+        //processamento
+        const media = (nota1 + parseInt(nota2) + parseInt(nota3) + parseInt(nota4) ) / 4
+
+        //saída de dados
+        if (media == 0) {
+            alert("aluno reprovado")
+        }else if(media <= 5){
+            alert("aluno de recuperação")
+        }else {
+            alert("aluno aprovado")
+        }
+
+    </script>
+</body>
+</html>
