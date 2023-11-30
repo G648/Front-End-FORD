@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //crie um programa para calcular a idade de uma pessoa em:
+        //meses - dias - horas - minutos
+
+        let meses = 12 // -> meses 
+        let dias = 365 // -> dias
+        let horas = 24 // -> horas
+        let minutos = 60 // -> minutos
+
+        //entrada de dados - usuario digitar 
+        const nome = prompt("informe seu nome: ")
+        const idade = prompt("Informe a sua idade: ");
+
+
+
+        //processamento de dados - calculo (lógica)
+        const calculoMeses = idade * meses
+        const calculoDias = idade * dias //numero grandãoooooo em dias
+        const calculoHoras = calculoDias * horas
+        const calculoMinutos = calculoHoras * minutos
+
+        //saída dos dados - exibição (alert, log... )
+
+        idade > 0 && idade < 100 ?
+            alert(`
+a idade do(a) ${nome}, em meses, é de: ${calculoMeses} meses
+a idade do(a) ${nome}, em dias, é de: ${calculoDias} dias
+a idade do(a) ${nome}, em horas, é de: ${calculoHoras} horas
+a idade do(a) ${nome}, em minutos, é de: ${calculoMinutos} minutos
+ `) : 
+ alert("dados inválidos")
+ 
+
+
+
+
+        //         if (idade > 0 && idade < 100) {
+
+        //             alert(`
+        // a idade do(a) ${nome}, em meses, é de: ${calculoMeses} meses
+        // a idade do(a) ${nome}, em dias, é de: ${calculoDias} dias
+        // a idade do(a) ${nome}, em horas, é de: ${calculoHoras} horas
+        // a idade do(a) ${nome}, em minutos, é de: ${calculoMinutos} minutos
+        // `)
+
+        //         } else {
+        //             alert("a idade informada não atende aos requisitos")
+        //         }
+
+    </script>
+</body>
+
+</html>
