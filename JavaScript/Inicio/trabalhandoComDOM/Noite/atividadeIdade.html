@@ -22,7 +22,7 @@
         const idade = prompt("Informe a sua idade: ");
 
 
-
+//teste
         //processamento de dados - calculo (lógica)
         const calculoMeses = idade * meses
         const calculoDias = idade * dias //numero grandãoooooo em dias
@@ -31,31 +31,52 @@
 
         //saída dos dados - exibição (alert, log... )
 
-        idade > 0 && idade < 100 ?
-            alert(`
-a idade do(a) ${nome}, em meses, é de: ${calculoMeses} meses
-a idade do(a) ${nome}, em dias, é de: ${calculoDias} dias
-a idade do(a) ${nome}, em horas, é de: ${calculoHoras} horas
-a idade do(a) ${nome}, em minutos, é de: ${calculoMinutos} minutos
- `) : 
- alert("dados inválidos")
- 
-
-
-
-
-        //         if (idade > 0 && idade < 100) {
-
+        //operador ternário (if - else)
+        //primeiro entramos com a condição, depois o retorno se for verdadeiro e por fim, o retorno se for falso
+        
+        //quebra de linha = literal templates
+        //         idade > 0 && idade < 100 ?
         //             alert(`
         // a idade do(a) ${nome}, em meses, é de: ${calculoMeses} meses
         // a idade do(a) ${nome}, em dias, é de: ${calculoDias} dias
         // a idade do(a) ${nome}, em horas, é de: ${calculoHoras} horas
         // a idade do(a) ${nome}, em minutos, é de: ${calculoMinutos} minutos
-        // `)
+        //  `) : 
+        //  alert("dados inválidos")
 
-        //         } else {
-        //             alert("a idade informada não atende aos requisitos")
-        //         }
+
+        //if comum:
+        if (idade > 0 && idade < 100) {
+
+            const escolhaUser = Number(prompt(`
+                o que você deseja exibir? 
+                1- calculo em meses, 
+                2- calculo em dias, 
+                3- calculo em horas, 
+                4- calculo em minutos
+                `))
+
+            switch (escolhaUser) {
+                case 1:
+                    alert(`a idade do(a) ${nome}, em meses, é de: ${calculoMeses} meses`)
+                    break;
+                case 2:
+                    alert(`a idade do(a) ${nome}, em dias, é de: ${calculoDias} dias`)
+                    break;
+                case 3:
+                    alert(` a idade do(a) ${nome}, em horas, é de: ${calculoHoras} horas`)
+                    break;
+                case 4:
+                    alert(` a idade do(a) ${nome}, em minutos, é de: ${calculoMinutos} minutos`)
+                    break;
+                default:
+                    alert("dados incorretos")
+                    break;
+            }
+        } else {
+            alert("a idade informada não atende aos requisitos")
+        }
+
 
     </script>
 </body>

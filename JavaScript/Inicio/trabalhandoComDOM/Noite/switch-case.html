@@ -10,11 +10,90 @@
         //escreva um programa utilizando o comando switch que imprima um mês 
         //de acordo com o número digitado pelo usuário
 
+        // const escolhaUser = Number(prompt("informe um número de 1 a 3: "));
+        
+        // //      variavel
+        // switch (escolhaUser) {
+        //     case 1:
+        //             alert("o número foi 1")
+        //         break;
+        //     case 2:
+        //             alert("o número foi 2")
+        //         break;
+        //     case 3:
+        //             alert("o número foi 3")
+        //         break;
+        //     default:
+        //             alert("opção inválida, escolha um valor entre 1 e 3")
+        //         break;
+        // }
+
+
+
         //crie um menu de bebidas e peça para o usuário escolher uma das opções.
         //dependendo da opção, exiba uma mensagem se gostaria de acrescentar gelo
         //se sim, exiba uma mensagem que a bebida será com adicional de gelo, caso contrário, sem gelo
 
+//teste
+
+
+
+
+
+
+
+
+
+        
+
         //crie uma calculadora com switch-Case
+
+        //entrada de dados
+        const operacao = prompt(`
+            informe a operação que voce deseja fazer...
+            + para somar
+            - para subtrair
+            / para dividir 
+            * para multiplicar
+        `)
+
+        const valor01 = Number(prompt("informe o primeiro número: "))
+        const valor02 = Number(prompt("informe o segundo número: "))
+
+        let resultado;
+
+        //processamento de dados
+
+        switch (operacao) {
+            case '+':
+                resultado = valor01 + valor02
+                //saída de dados
+                alert(`a soma de ${valor01} + ${valor02} = ${resultado}`)
+                break;
+            case '-':
+                resultado = valor01 - valor02
+                //saída de dados
+                alert(`a subtração de ${valor01} - ${valor02} = ${resultado}`)
+                break;
+            case '/':
+                resultado = valor01 / valor02
+                //saída de dados
+                alert(`a divisão de ${valor01} / ${valor02} = ${resultado}`)
+                break;
+            case '*':
+                resultado = valor01 * valor02
+                //saída de dados
+                alert(`a multiplicação de ${valor01} * ${valor02} = ${resultado}`)
+                break;
+            default:
+                //saída de dados
+                alert("opção inválida na calculadora!")
+                break;
+        }
+
+
+
+
     </script>
 </body>
 </html>
