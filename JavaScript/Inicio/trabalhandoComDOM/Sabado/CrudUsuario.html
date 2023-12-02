@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale='1.0'">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let usuarios = [];
+
+function mostrarMenu() {
+  console.log("\n=== Menu ===");
+  console.log("1. Adicionar Usuário");
+  console.log("2. Visualizar Usuários");
+  console.log("3. Atualizar Usuário");
+  console.log("4. Excluir Usuário");
+  console.log("5. Sair");
+}
+
+function adicionarUsuario() {
+  let nome = prompt("Digite o nome do usuário:");
+  let email = prompt("Digite o email do usuário:");
+
+  if (!nome || !email) {
+    console.log("Nome e email são obrigatórios.");
+    return;
+  }
+
+  usuarios.push({ nome, email });
+  console.log("Usuário adicionado com sucesso!");
+}
+
+function visualizarUsuarios() {
+  console.log("\n=== Lista de Usuários ===");
+  for (let usuario of usuarios) {
+    console.log(`Nome: ${usuario.nome}, Email: ${usuario.email}`);
+  }
+}
+
+function atualizarUsuario() {
+  let emailAtualizar = prompt("Digite o email do usuário que deseja atualizar:");
+  let usuarioAtualizar = usuarios.find(usuario => usuario.email === emailAtualizar);
+
+  if (!usuarioAtualizar) {
+    console.log("Usuário não encontrado.");
+    return;
+  }
+
+  let novoNome = prompt("Digite o novo nome (ou pressione Enter para manter o mesmo):");
+  let novoEmail = prompt("Digite o novo email (ou pressione Enter para manter o mesmo):");
+
+  if (novoNome) {
+    usuarioAtualizar.nome = novoNome;
+  }
+
+  if (novoEmail) {
+    usuarioAtualizar.email = novoEmail;
+  }
+
+  console.log("Usuário atualizado com sucesso!");
+}
+
+function excluirUsuario() {
+  let emailExcluir = prompt("Digite o email do usuário que deseja excluir:");
+  let indiceExcluir = usuarios.findIndex(usuario => usuario.email === emailExcluir);
+
+  if (indiceExcluir === -1) {
+    console.log("Usuário não encontrado.");
+    return;
+  }
+
+  usuarios.splice(indiceExcluir, 1);
+  console.log("Usuário excluído com sucesso!");
+}
+
+let opcao;
+
+while (opcao !== 5) {
+  mostrarMenu();
+  opcao = parseInt(prompt("Escolha uma opção:"));
+
+  switch (opcao) {
+    case 1:
+      adicionarUsuario();
+      break;
+    case 2:
+      visualizarUsuarios();
+      break;
+    case 3:
+      atualizarUsuario();
+      break;
+    case 4:
+      excluirUsuario();
+      break;
+    case 5:
+      console.log("Saindo do programa.");
+      break;
+    default:
+      console.log("Opção inválida. Tente novamente.");
+  }
+}
+
+    </script>
+</body>
+</html>

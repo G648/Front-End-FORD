@@ -11,55 +11,143 @@
         //Adega de bebidas
 
         //menu personalizado
-        alert(`
-            Bem vindo a minha adega, escolha uma opção abaixo:
-            1- Coca-Cola
-            2- Fanta-Uva
-            3- Cachaça
-            4- Cantinho
-            5- Cerveja
-            6- Corote
-        `)
+        //Literal template
+        // alert(`
+        //     Bem vindo a minha adega, escolha uma opção abaixo:
+        //     1- Coca-Cola
+        //     2- Fanta-Uva
+        //     3- Cachaça
+        //     4- Cantinho
+        //     5- Cerveja
+        //     6- Corote
+        // `)
+
+        // //entrada de dados
+        // const opcaoUsuario = Number(prompt("Qual opção de bebida você deseja escolher?"))
+
+        // //processamento
+        // let respostaUser;
+
+        // switch (opcaoUsuario) { //1 2 3 4 5 6
+        //     case 1:
+        //         //saída de dados
+        //         alert("a opção que o usuario informou é Coca-Cola")
+
+        //         respostaUser = prompt("Voce deseja acrescentar gelo e limão ?")
+
+        //         //ternário
+        //         respostaUser == "sim" ? alert("A sua bebida terá gelo e limão") : alert("sua bebida não terá gelo e nem limão")
+
+        //         break;
+        //     case 2:
+        //         //saída de dados
+        //         alert("a opção que o usuario informou é Fanta-uva")
+
+        //         respostaUser = prompt("voce quer gelo na sua bebida ? sim ou não ? ").toLowerCase()
+
+        //         //condição para avaliar a resposta do usuário (sim, nao - true or false)
+        //         respostaUser == 'sim' ? alert("Ok, Sua bebida terá gelo!") : alert("Ok, sua bebida não terá gelo") 
+        //         break;
+        //     case 3:
+        //         //saída de dados
+        //         alert("a opção que o usuario informou é cachaça")
+
+        //         respostaUser = prompt("voce quer gelo na sua bebida ? sim ou não ? ").toLowerCase()
+
+        //         //condição para avaliar a resposta do usuário (sim, nao - true or false)
+        //         respostaUser == 'sim' ? alert("Ok, Sua bebida terá gelo!") : alert("Ok, sua bebida não terá gelo") 
+        //         break;
+        //     case 4:
+        //         //saída de dados
+        //         alert("a opção que o usuario informou é Cantinho")
+
+        //         respostaUser = prompt("voce quer gelo na sua bebida ? sim ou não ? ").toLowerCase()
+
+        //         //condição para avaliar a resposta do usuário (sim, nao - true or false)
+        //         respostaUser == 'sim' ? alert("Ok, Sua bebida terá gelo!") : alert("Ok, sua bebida não terá gelo") 
+        //         break;
+        //     case 5:
+        //         //saída de dados
+        //         alert("a opção que o usuario informou é Cerveja")
+
+        //         respostaUser = prompt("voce quer gelo na sua bebida ? sim ou não ? ").toLowerCase()
+
+        //         //condição para avaliar a resposta do usuário (sim, nao - true or false)
+        //         respostaUser == 'sim' ? alert("Ok, Sua bebida terá gelo!") : alert("Ok, sua bebida não terá gelo") 
+        //         break;
+        //     case 6:
+        //         //saída de dados
+        //         alert("a opção que o usuario informou é Corote")
+
+        //         respostaUser = prompt("voce quer gelo na sua bebida ? sim ou não ? ").toLowerCase()
+
+        //         //condição para avaliar a resposta do usuário (sim, nao - true or false)
+        //         respostaUser == 'sim' ? alert("Ok, Sua bebida terá gelo!") : alert("Ok, sua bebida não terá gelo") 
+        //         break;
+        //     default:
+        //         alert("opção inválida")
+        //         break;
+        // }
+
+
+// ----------------------------------------------------------------------------------------------------------------------------------------------
+
+        //crie uma calculadora que irá capturar qual operação aritmética o usuario deseja fazer
+        //utilize switch-case para resolver o problema
 
         //entrada de dados
-        const opcaoUsuario = Number(prompt("Qual opção de bebida você deseja escolher?"))
+        let num1 = parseInt(prompt("Informe o primeiro número: "))
+        let num2 = parseInt(prompt("Informe o segundo número: "))
+
+        //menu opções
+        const escolhaUser = Number(prompt(`
+            Escolha uma operação:
+            [1] - soma
+            [2] - subtração
+            [3] - divisão
+            [4] - multiplicação
+        `))
 
         //processamento
-        switch (opcaoUsuario) { //1 2 3 4 5 6
+        //realizar o calculo com base na opção que o usuario digitou 
+        switch (escolhaUser) {
             case 1:
-                //saída de dados
-                alert("a opção que o usuario informou é Coca-Cola")
+                    const calculoSoma = num1 + num2
 
-                let respostaUser = prompt("Voce deseja acrescentar gelo e limão ?")
-
-                //ternário
-                respostaUser == "sim" ? alert("A sua bebida terá gelo e limão") : alert("Ok, sem gelo e sem limão")
-
+                    alert(`O resultado de ${num1} + ${num2} = ${calculoSoma}`)
                 break;
             case 2:
-                //saída de dados
-                alert("a opção que o usuario informou é Fanta-uva")
+                    const calculoSub = num1 - num2
+
+                    alert(`O resultado de ${num1} - ${num2} = ${calculoSub}`)
                 break;
             case 3:
-                //saída de dados
-                alert("a opção que o usuario informou é cachaça")
+                    const calculoDiv = num1 / num2
+
+                    num1 == 0 || num2 == 0 ? alert("Não é possível dividir por 0") : alert(`O resultado de ${num1} / ${num2} = ${calculoDiv}`)
+                    
                 break;
             case 4:
-                //saída de dados
-                alert("a opção que o usuario informou é Cantinho")
+                    const calculoMult = num1 * num2
+
+                    alert(`O resultado de ${num1} * ${num2} = ${calculoMult}`)
                 break;
-            case 5:
-                //saída de dados
-                alert("a opção que o usuario informou é Cerveja")
-                break;
-            case 6:
-                //saída de dados
-                alert("a opção que o usuario informou é Corote")
-                break;
+        
             default:
-                alert("opção inválida")
+                alert("opção inválida!")
                 break;
         }
+
+        alert("obrigado por usar a minha calculadora!")
+
+        //saída de dados
+        //exibir os dois números que o usuário informou e em seguida o resultado da operação
+
+        //num1 = 10 num2 = 20
+        //a soma de num1 + num2 = 30
+
+
+
 
 
     </script>

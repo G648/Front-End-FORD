@@ -1,0 +1,48 @@
+#num1::-webkit-inner-spin-button,
+#num1::-webkit-outer-spin-button,
+#num2::-webkit-inner-spin-button,
+#num2::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.flex-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+fieldset {
+    width: 40vw;
+    height: 50vh;
+    border-radius: 8px;
+    border: 2px solid #fff; /* Adicionando uma borda branca ao redor do campo de formulário */
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 9, 1) 40%, rgba(0, 212, 255, 1) 100%);
+    color: white;
+    padding: 20px; /* Adicionando algum espaço interno para o conteúdo */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adicionando uma leve sombra */
+}
+
+.info-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo para os botões do formulário */
+button {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #eee;
+}

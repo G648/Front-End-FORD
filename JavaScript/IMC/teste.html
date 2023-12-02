@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu de Bebidas</title>
+</head>
+<body>
+
+<script>
+    var continuar = true;
+    var bebidasPedidas = [];
+
+    while (continuar) {
+        var opcao = prompt(
+            "Menu de Bebidas:\n\n" +
+            "1. Whisky\n" +
+            "2. Vodka\n" +
+            "3. Cachaça\n" +
+            "4. Gin\n" +
+            "5. Curaçau\n\n" +
+            "Escolha uma bebida (Digite o número correspondente):"
+        );
+
+        var bebida;
+        switch (opcao) {
+            case "1":
+                bebida = "Whisky";
+                break;
+            case "2":
+                bebida = "Vodka";
+                break;
+            case "3":
+                bebida = "Cachaça";
+                break;
+            case "4":
+                bebida = "Gin";
+                break;
+            case "5":
+                bebida = "Curaçau";
+                break;
+            default:
+                alert("Opção inválida. Por favor, escolha um número de 1 a 5.");
+                continuar = false;
+                break;
+        }
+
+        if (bebida) {
+            var gelo = prompt(`Deseja adicional de gelo na sua ${bebida}? (S para Sim / N para Não):`);
+            var mensagem_gelo = gelo && gelo.toUpperCase() === "S" ? "com adicional de gelo" : "sem gelo";
+
+            bebidasPedidas.push(`${bebida} ${mensagem_gelo}`);
+            
+            var maisUma = prompt("Mais alguma bebida? (S para Sim / N para Não):");
+            continuar = maisUma && maisUma.toUpperCase() === "S";
+        }
+    }
+
+    if (bebidasPedidas.length > 0) {
+        alert(`Aproveite suas bebidas:\n${bebidasPedidas.join("\n")}`);
+    } else {
+        alert("Você não pediu nenhuma bebida. Até a próxima!");
+    }
+</script>
+
+</body>
+</html>

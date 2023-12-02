@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Exercício 3: Agenda de Contatos com Edição
+// Crie uma agenda de contatos que permita adicionar, visualizar, editar e excluir contatos.
+// Utilize switch-case, while e estruturas condicionais para gerenciar as operações.
+
+let agenda = [];
+
+while (true) {
+  let opcao = parseInt(prompt("Escolha uma opção:\n1. Adicionar contato\n2. Visualizar contatos\n3. Editar contato\n4. Excluir contato\n5. Sair"));
+
+  switch (opcao) {
+    case 1:
+
+      let nome = prompt("Digite o nome do contato:");
+      let telefone = prompt("Digite o telefone do contato:");
+
+      agenda.push({ nome, telefone });
+
+      alert("Contato adicionado com sucesso!");
+      
+      break;
+
+    case 2:
+
+        let ListaDeContatos = "Lista de contatos\n"
+        for (let contato of agenda) {
+        
+        ListaDeContatos += `\n Nome: ${contato.nome}, Telefone: ${contato.telefone}`;
+      }
+      alert(ListaDeContatos)
+      break;
+
+    case 3:
+      let nomeEditar = prompt("Digite o nome do contato que deseja editar:");
+      let contatoEditar = agenda.find(contato => contato.nome === nomeEditar);
+
+      if (contatoEditar) {
+
+        contatoEditar.telefone = prompt("Digite o novo telefone:");
+        alert("Contato editado com sucesso!");
+
+      } else {
+
+        alert("Contato não encontrado.");
+
+      }
+      break;
+
+    case 4:
+
+      let nomeExcluir = prompt("Digite o nome do contato que deseja excluir:");
+      let indiceExcluir = agenda.findIndex(contato => contato.nome === nomeExcluir);
+
+      if (indiceExcluir !== -1) {
+
+        agenda.splice(indiceExcluir, 1);
+        alert("Contato excluído com sucesso!");
+
+      } else {
+
+        alert("Contato não encontrado.");
+
+      }
+      break;
+
+    case 5:
+
+      alert("Saindo do programa.");
+
+      process.exit();
+    default:
+
+      alert("Opção inválida. Tente novamente.");
+  }
+}
+
+    </script>
+</body>
+
+</html>
