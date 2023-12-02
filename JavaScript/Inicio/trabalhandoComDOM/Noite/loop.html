@@ -7,9 +7,58 @@
 </head>
 <body>
     <script>
-        //qual a idade do péricles? 
+//         //inicio loop
+//         //exemplo loop
+//         let passo;
+//         //  inicializador | condição | Incremento
+//         for (passo = 0; passo < 5 ; passo++) {
+//             //retorno
+//             console.log("ande um passo para leste;");
+//         }
 
+// //-------------------------------------------------------------------------------------------
+
+//         //qual a idade do péricles? 
+//         let idadePericles = Number(prompt("qual a idade do péricles?"))
+
+//         //enquanto idade for DIFERENTE de 54
+//         //operador relacional
+//         while (idadePericles !== 54) {
+//             //condição se for verdadeira
+//             alert("errouuuu, tente novamente")
+            
+//             //operador ternário para dizer ao usuário se ele está mais perto de acertar a idade
+//             idadePericles < 54 ? alert("o péricles é mais velho") : alert("o péricles é mais novo!!")
+
+//             //fazendo a pergunta novamente
+//             idadePericles = Number(prompt("qual é a idade do périclão ?"))
+//         }
+
+//         alert("resposta correta")
+
+//-----------------------------------------------------------------------------------------
         //senha digitada != 6
+
+        //entrada
+        let senha = prompt("informe uma senha: ")
+        //processamento
+        while(senha.length !== 6) {
+            //bloco se for verdade
+            alert("Opa, a senha tem que ter 6 caracteres. Informe a senha novamente")
+
+            // senha.length == 6 ? alert("Senha correta") : alert("senha incorreta")
+
+            senha = prompt("informe a senha novamente: ")
+        } 
+
+        //saída
+        alert("login efetuado!")
+
+
+
+
+
+
 
         //senha igual a nome
     </script>

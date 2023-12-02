@@ -34,62 +34,107 @@
         //dependendo da opção, exiba uma mensagem se gostaria de acrescentar gelo
         //se sim, exiba uma mensagem que a bebida será com adicional de gelo, caso contrário, sem gelo
 
-//teste
+
+        //entrada de dados
+        const escolhaUser = Number(prompt(`
+        seja bem vindo ao menu de bebidas, por gentileza, escolha uma das opções abaixo:
+        [1] - Coca-Cola
+        [2] - Del Vale
+        [3] - Suco de maracujá
+        [4] - Corona
+        [5] - Original
+        `))
+        //literal templates
 
 
+        //processamento de dados
+        let gelo
 
+        switch (escolhaUser) {
+            case 1:
+                    alert("Você escolheu Coca-Cola");
+                    gelo = prompt("Voce gostaria de acrescentar gelo?").toLowerCase()
 
+                    //saída de dados
+                    //operador ternário
+                    gelo == 'sim' ? alert("voce escolheu gelo") : alert("voce não quer gelo")
+                break;
+            case 2:
+                    alert("Você escolheu Del Valle");
+                    gelo = prompt("Voce gostaria de acrescentar gelo?").toLowerCase()
 
+                    gelo == 'sim' ? alert("voce escolheu gelo") : alert("voce não quer gelo")
+                break;
+            case 3:
+                    alert("Você escolheu Suco de maracujá");
+                    gelo = prompt("Voce gostaria de acrescentar gelo?").toLowerCase()
 
+                    gelo == 'sim' ? alert("voce escolheu gelo") : alert("voce não quer gelo")
+                break;
+            case 4:
+                    alert("Você escolheu Corona");
+                    gelo = prompt("Voce gostaria de acrescentar gelo?").toLowerCase()
 
+                    gelo == 'sim' ? alert("voce escolheu gelo") : alert("voce não quer gelo")
+                break;
+            case 5:
+                    alert("Você escolheu Original");
+                    gelo = prompt("Voce gostaria de acrescentar gelo?").toLowerCase()
 
+                    gelo == 'sim' ? alert("voce escolheu gelo") : alert("voce não quer gelo")
+                break;
+        
+            default:
+
+                break;
+        }
 
         
 
         //crie uma calculadora com switch-Case
 
         //entrada de dados
-        const operacao = prompt(`
-            informe a operação que voce deseja fazer...
-            + para somar
-            - para subtrair
-            / para dividir 
-            * para multiplicar
-        `)
+        // const operacao = prompt(`
+        //     informe a operação que voce deseja fazer...
+        //     + para somar
+        //     - para subtrair
+        //     / para dividir 
+        //     * para multiplicar
+        // `)
 
-        const valor01 = Number(prompt("informe o primeiro número: "))
-        const valor02 = Number(prompt("informe o segundo número: "))
+        // const valor01 = Number(prompt("informe o primeiro número: "))
+        // const valor02 = Number(prompt("informe o segundo número: "))
 
-        let resultado;
+        // let resultado;
 
-        //processamento de dados
+        // //processamento de dados
 
-        switch (operacao) {
-            case '+':
-                resultado = valor01 + valor02
-                //saída de dados
-                alert(`a soma de ${valor01} + ${valor02} = ${resultado}`)
-                break;
-            case '-':
-                resultado = valor01 - valor02
-                //saída de dados
-                alert(`a subtração de ${valor01} - ${valor02} = ${resultado}`)
-                break;
-            case '/':
-                resultado = valor01 / valor02
-                //saída de dados
-                alert(`a divisão de ${valor01} / ${valor02} = ${resultado}`)
-                break;
-            case '*':
-                resultado = valor01 * valor02
-                //saída de dados
-                alert(`a multiplicação de ${valor01} * ${valor02} = ${resultado}`)
-                break;
-            default:
-                //saída de dados
-                alert("opção inválida na calculadora!")
-                break;
-        }
+        // switch (operacao) {
+        //     case '+':
+        //         resultado = valor01 + valor02
+        //         //saída de dados
+        //         alert(`a soma de ${valor01} + ${valor02} = ${resultado}`)
+        //         break;
+        //     case '-':
+        //         resultado = valor01 - valor02
+        //         //saída de dados
+        //         alert(`a subtração de ${valor01} - ${valor02} = ${resultado}`)
+        //         break;
+        //     case '/':
+        //         resultado = valor01 / valor02
+        //         //saída de dados
+        //         alert(`a divisão de ${valor01} / ${valor02} = ${resultado}`)
+        //         break;
+        //     case '*':
+        //         resultado = valor01 * valor02
+        //         //saída de dados
+        //         alert(`a multiplicação de ${valor01} * ${valor02} = ${resultado}`)
+        //         break;
+        //     default:
+        //         //saída de dados
+        //         alert("opção inválida na calculadora!")
+        //         break;
+        // }
 
 
 
