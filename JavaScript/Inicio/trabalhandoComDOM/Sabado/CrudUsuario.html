@@ -11,12 +11,14 @@
 let usuarios = [];
 
 function mostrarMenu() {
-  console.log("\n=== Menu ===");
-  console.log("1. Adicionar Usuário");
-  console.log("2. Visualizar Usuários");
-  console.log("3. Atualizar Usuário");
-  console.log("4. Excluir Usuário");
-  console.log("5. Sair");
+  alert(`
+    ***** MENU *****
+    [1] - Adicionar usuario
+    [2] - Visualizar usuario
+    [3] - Atualizar usuario
+    [4] - Excluir usuario
+    [5] - sair
+  `)
 }
 
 function adicionarUsuario() {
@@ -24,19 +26,21 @@ function adicionarUsuario() {
   let email = prompt("Digite o email do usuário:");
 
   if (!nome || !email) {
-    console.log("Nome e email são obrigatórios.");
+    alert("Nome e email são obrigatórios.");
     return;
   }
 
   usuarios.push({ nome, email });
-  console.log("Usuário adicionado com sucesso!");
+  alert("Usuário adicionado com sucesso!");
 }
 
 function visualizarUsuarios() {
-  console.log("\n=== Lista de Usuários ===");
+  let listaUsers;
   for (let usuario of usuarios) {
-    console.log(`Nome: ${usuario.nome}, Email: ${usuario.email}`);
+    listaUsers += (`
+    Nome: ${usuario.nome}, Email: ${usuario.email}`);
   }
+  alert( "***** Lista de Usuários *****" + listaUsers)
 }
 
 function atualizarUsuario() {
@@ -44,7 +48,7 @@ function atualizarUsuario() {
   let usuarioAtualizar = usuarios.find(usuario => usuario.email === emailAtualizar);
 
   if (!usuarioAtualizar) {
-    console.log("Usuário não encontrado.");
+    alert("Usuário não encontrado.");
     return;
   }
 
@@ -59,7 +63,7 @@ function atualizarUsuario() {
     usuarioAtualizar.email = novoEmail;
   }
 
-  console.log("Usuário atualizado com sucesso!");
+  alert("Usuário atualizado com sucesso!");
 }
 
 function excluirUsuario() {
@@ -67,12 +71,12 @@ function excluirUsuario() {
   let indiceExcluir = usuarios.findIndex(usuario => usuario.email === emailExcluir);
 
   if (indiceExcluir === -1) {
-    console.log("Usuário não encontrado.");
+    alert("Usuário não encontrado.");
     return;
   }
 
   usuarios.splice(indiceExcluir, 1);
-  console.log("Usuário excluído com sucesso!");
+  alert("Usuário excluído com sucesso!");
 }
 
 let opcao;
@@ -95,10 +99,10 @@ while (opcao !== 5) {
       excluirUsuario();
       break;
     case 5:
-      console.log("Saindo do programa.");
+      alert("Saindo do programa.");
       break;
     default:
-      console.log("Opção inválida. Tente novamente.");
+      alert("Opção inválida. Tente novamente.");
   }
 }
 

@@ -23,7 +23,7 @@ function soma(a, b =0) {
 console.log(soma(4, 10));
 
 //armazenando funções dentro de uma variável (anonima = sem nome (mesma escrita, porém sem o nome da função!))
-const imprimirSoma = function (a, bla) { 
+const imprimirSoma = function (a, b) { 
     console.log(a + b);
 }
 
