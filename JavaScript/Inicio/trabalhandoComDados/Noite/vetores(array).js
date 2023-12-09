@@ -131,10 +131,6 @@ console.log(numerosArray);
 
 
 
-// 8- reduce
-
-
-
 //indice começando sempre do 0, valor default do array, se eu mostrar um indice que não existe, o valor retornado vai ser undefined
 
 
