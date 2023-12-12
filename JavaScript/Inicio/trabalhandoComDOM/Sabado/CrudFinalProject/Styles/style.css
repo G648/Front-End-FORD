@@ -40,7 +40,7 @@
 .links-header {
     display: flex;
     justify-content: center;
-    margin-left: calc(100% - 81.1%);
+    margin-left: calc(100% - 83.5%);
     box-shadow: 1px 0 18px rgba(83, 83, 83, 0.5)
 }
 
@@ -157,7 +157,7 @@
 .main-banner-flex-img{
     position: absolute;
     right: 0;
-    top: 7.8%;
+    top: 6.7%;
 }
 
 .mvv-info{

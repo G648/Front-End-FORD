@@ -1,9 +1,13 @@
 function Calcular() {
-    event.preventDefault()
+    event.preventDefault() //impede de recarregar a página automáticamente.
 
+    //valor capturado no input e guardando o valor na variável n1
     let n1 = parseInt(document.getElementById('num1').value)
+    //valor capturado no input e guardando o valor na variável n2
     let n2 = parseInt(document.getElementById('num2').value)
+    //operação escolhida pelo usuário (+, -, /, *)
     let operacao = document.getElementById('operacao').value
+    //variável para guadar o valor da operação
     let resultado;
 
     //validação para o usuario não digitar palavras e apenas números
@@ -15,29 +19,31 @@ function Calcular() {
         case 'Somar':
                 resultado = n1 + n2
 
-                alert(`o resultado da soma é: ${resultado}`)
+                document.getElementById('resultado').innerHTML = resultado
             break;
         case 'Subtrair':    
                 resultado = n1 - n2
 
-                alert(`o resultado da subtração é: ${resultado}`)
+                document.getElementById('resultado').innerHTML = resultado
             break;
         case 'Multiplicar':
                 resultado = n1 * n2
 
-                alert(`o resultado da multiplicação é: ${resultado}`)
+                document.getElementById('resultado').innerHTML = resultado
             break;
-        case 'Dividir':
-                resultado = n1 / n2
-
-                alert(`o resultado da divisão é: ${resultado}`)
-            break;
-    
+            case 'Dividir':
+                if (n2 === 0 || n1 === 0) {
+                    const resp = "Não é possível dividir por 0.";
+                    document.getElementById('resultado').innerHTML = resp;
+                } else {
+                    resultado = n1 / n2;
+                    document.getElementById('resultado').innerHTML = resultado;
+                }
+                break;
         default:
             alert("Opção inválida")
             break;
     }
-    document.getElementById('resultado').innerHTML = resultado
 }
 
 
