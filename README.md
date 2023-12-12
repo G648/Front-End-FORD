@@ -7,3 +7,7 @@ https://65259ef1a3518a16ad6657c5--merry-pothos-04cf7c.netlify.app -> hospedagem 
 # Projeto ViaCEP - Js
 
 https://front-end-ford-two.vercel.app/
+
+# Projeto Crud - Js
+
+https://front-end-ford-94gb.vercel.app/
