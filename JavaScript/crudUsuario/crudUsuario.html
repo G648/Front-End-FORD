@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud usuario</title>
+</head>
+
+<body>
+    <script>
+        //CRIAR UM SISTEMA DE GERENCIAMENTO DE USUÁRIOS
+
+        let arrUsuario = []
+
+        function mostrarMenu() {
+            alert(`
+                *****MENU*****
+                [1] - Cadastrar Usuário
+                [2] - Listar Usuário(s)
+                [3] - Atualizar Usuário
+                [4] - Deletar Usuário
+                [5] - Sair do programa
+            `)
+        }
+
+        // function dataCadastroUsuario() {
+        //     let date = new Date()
+            
+        //     let dia = date.getDay().toString().padStart(2, '0')
+        //     let mes = (date.getMonth() + 1) .toString().padStart(2, '0')
+        //     let ano = date.getFullYear().toString()
+
+        //     const dataCadastro = `${dia}/${mes}/${ano}`
+        //     return dataCadastro
+        // }
+
+        //MÉTODO DE CADASTRAR (VERBO HTTP: POST)
+
+        function adicionarUsuario() {
+            let nomeUsuario = prompt("Qual o nome do usuário: ")
+            let emailUsuario = prompt("Qual o email do usuário:")
+
+            let date = new Date();
+
+            let ano = date.getFullYear();
+            let mes = (date.getMonth() + 1).toString();
+            let dia = date.getDate().toString();
+
+            const dataAtual = `${dia}/${mes}/${ano}`
+
+            if (!nomeUsuario || !emailUsuario) {
+                alert("O nome do campo é obrigatório!")
+            }
+
+            arrUsuario.push({ nomeUsuario, emailUsuario, dataAtual })
+
+            console.log(arrUsuario);
+        }
+
+        //MÉTODO DE LISTAR (VERBO HTTP: GET)
+
+        function listarUsuario() {
+            // dataCadastroUsuario()
+            let listaUser;
+            
+            for (const usuario of arrUsuario) {
+                listaUser += (`
+                    Nome: ${usuario.nomeUsuario}, Email: ${usuario.emailUsuario} , Data de cadastro: ${usuario.dataAtual}
+                `)
+            }
+
+            alert("***** Lista de Usuários *****" + listaUser)
+        }
+
+        //MÉTODO DE ATUALIZAR (VERBO HTTP: PUT)
+
+        function atualizarUsuario() {
+            let findEmail = prompt("Informe o email que você deseja atualizar:")
+            let usuarioAtualizado = arrUsuario.find(usuario => usuario.emailUsuario === findEmail)
+
+            if (!usuarioAtualizado) {
+                alert("Usuario não encontrado no sistema!")
+                return;
+            }
+
+            let novoNomeUsuario = prompt("Informe o novo nome do usuário: ")
+            let novoEmailUsuario = prompt("Informe o novo email do usuário: ")
+
+
+            if (novoNomeUsuario) {
+                usuarioAtualizado.nomeUsuario = novoNomeUsuario
+            }
+
+            if (novoEmailUsuario) {
+                usuarioAtualizado.emailUsuario = novoEmailUsuario
+            }
+
+            alert("Usuário foi atualizado com sucesso!")
+        }
+
+        //MÉTODO DE DELETAR (VERBO HTTP: DELETE)
+
+        function deleteUsuario() {
+            let emailDelete = prompt("Informe o email que você deseja excluir")
+            let indiceDelete = arrUsuario.findIndex(usuario => usuario.emailUsuario === emailDelete)
+
+            if (indiceDelete === -1) {
+                alert("Usuario não foi encontrado no sistema")
+                return;
+            }
+
+            let confirmacao = confirm("Deseja mesmo deletar o usuario? ")
+
+            if (confirmacao) {
+                arrUsuario.splice(indiceDelete, 1)
+
+                alert("Usuario foi deletado com sucesso!")
+            }
+
+        }
+
+        let opcaoUser;
+
+        while (opcaoUser !== 5) {
+            mostrarMenu()
+
+            opcaoUser = Number(prompt("Informe uma das opções do menu: "))
+
+            switch (opcaoUser) {
+                case 1:
+                    adicionarUsuario()
+                    break;
+                case 2:
+                    listarUsuario()
+                    break;
+                case 3:
+                    atualizarUsuario()
+                    break;
+                case 4:
+                    deleteUsuario()
+                    break;
+                case 5:
+                    alert("Saindo do programa.... Até logo")
+                    break;
+                default:
+                    alert("Opção inválida")
+                    break;
+            }
+
+        }
+    </script>
+</body>
+
+</html>
