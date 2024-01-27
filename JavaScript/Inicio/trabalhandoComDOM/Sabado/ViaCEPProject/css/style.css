@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -21,7 +22,7 @@ body {
 }
 
 .container {
-    flex-grow: 3;
+    /* flex-grow: 3; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,6 +43,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 40px;
 }
+
 .inputbox {
     position: relative;
     display: flex;
